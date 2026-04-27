@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Ведьмак: магазин игр</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: #14100cee;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #4f3a28;
+      transition: all 0.35s;
+      height: 100%;
+    }
+    .card .card-desc {
+      text-align: left;
+      padding: 6px 16px 12px 16px;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: #d7cdb6;
+      margin: 0;
+    }
+    .card .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #cba758;
+      margin: 8px 16px 4px 16px;
+      display: block;
+      border-top: 1px dashed rgba(200,160,80,0.4);
+      padding-top: 8px;
+    }
+    .card .buy-btn {
+      margin: 8px 16px 18px 16px;
+      width: auto;
+      display: inline-block;
+    }
+    .card .card-title {
+      padding: 12px 16px 4px 16px;
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+    .card-img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      background: #1e1814;
+      padding: 12px;
+      border-bottom: 1px solid #7a5a3a;
+    }
+    .store-link {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div id="embers-container"></div>
+<button id="musicToggleBtn" class="music-toggle">MUSIC (ВКЛ)</button>
+<button id="scrollTopBtn" class="scroll-top" title="Наверх">↑</button>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="wrapper">
+  <div class="breadcrumbs"><a href="index.html">Главная</a> / <a href="shop.html">Магазин игр</a></div>
+
+  <div class="nav-bar">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="shop.html" class="nav-btn active">Магазин игр</a>
+    <a href="books.html" class="nav-btn">Книги</a>
+  </div>
+
+  <h1>Магазин игр по вселенной Ведьмака</h1>
+  <div class="intro-text">
+    <p>Официальные лицензионные игры от CD Projekt RED. Нажмите на кнопку, чтобы перейти в магазин Steam и приобрести игру.</p>
+  </div>
+
+  <h2>Сравнение игр</h2>
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr><th>Игра</th><th>Год</th><th>Движок</th><th>Размер</th><th>Рейтинг Steam</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ведьмак 3: Дикая Охота</td><td>2015</td><td>REDengine 3</td><td>50 GB</td><td>96%</td></tr>
+        <tr><td>Ведьмак 2: Убийцы королей</td><td>2011</td><td>REDengine</td><td>16 GB</td><td>89%</td></tr>
+        <tr><td>Ведьмак (первая глава)</td><td>2007</td><td>Aurora Engine</td><td>9 GB</td><td>85%</td></tr>
+        <tr><td>Гвит: Ведьмак. Карточная игра</td><td>2018</td><td>Unity</td><td>8 GB</td><td>87%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Награды игр</h2>
+  <div class="intro-text">
+    <p><strong>Ведьмак 3: Дикая Охота</strong> — более 800 наград «Игра года», включая Golden Joystick Awards и The Game Awards 2015.</p>
+    <p><strong>Ведьмак 2: Убийцы королей</strong> — 50+ наград, включая «Лучшая RPG» от IGN.</p>
+    <p><strong>Ведьмак</strong> — премия за лучший сюжет и роль.</p>
+    <p><strong>Гвит</strong> — премия за лучшую карточную игру 2018 года.</p>
+  </div>
+
+  <h2>Игры</h2>
+  <div class="schools-grid">
+    <div class="card">
+      <img class="card-img" src="images/7.png" alt="Ведьмак 3">
+      <div class="card-title">Ведьмак 3: Дикая Охота</div>
+      <div class="price">1499 ₽ (Complete Edition)</div>
+      <div class="card-desc">Шедевр CD Projekt RED. Грандиозный открытый мир, два дополнения: «Каменные сердца» и «Кровь и вино». Более 200 часов геймплея. Ваши решения влияют на финал игры.</div>
+      <a href="https://store.steampowered.com/agecheck/app/292030/?l=russian&cc=US" target="_blank" class="store-link"><button class="buy-btn">Купить в Steam</button></a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/8.png" alt="Ведьмак 2">
+      <div class="card-title">Ведьмак 2: Убийцы королей</div>
+      <div class="price">799 ₽</div>
+      <div class="card-desc">Нелинейный сюжет с политическими интригами. Enhanced Edition включает все дополнения. Вторая глава полностью меняется в зависимости от вашего выбора.</div>
+      <a href="https://store.steampowered.com/app/20920/The_Witcher_2_Assassins_of_Kings_Enhanced_Edition/" target="_blank" class="store-link"><button class="buy-btn">Купить в Steam</button></a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/9.png" alt="Ведьмак 1">
+      <div class="card-title">Ведьмак (первая глава)</div>
+      <div class="price">449 ₽</div>
+      <div class="card-desc">Классика 2007 года. Начало легендарной трилогии. Enhanced Edition Director's Cut с улучшенной графикой и дополнительными сценами.</div>
+      <a href="https://store.steampowered.com/app/20900/The_Witcher_Enhanced_Edition_Directors_Cut/" target="_blank" class="store-link"><button class="buy-btn">Купить в Steam</button></a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/10.png" alt="Гвит">
+      <div class="card-title">Гвит: Ведьмак. Карточная игра</div>
+      <div class="price">Бесплатно</div>
+      <div class="card-desc">Автономная версия культового гвинта. Собирайте уникальные колоды, сражайтесь с игроками по всему миру. Регулярные обновления и рейтинговые режимы.</div>
+      <a href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank" class="store-link"><button class="buy-btn">Играть бесплатно</button></a>
+    </div>
+  </div>
+
+  <h2>Системные требования</h2>
+  <div class="specs-list">
+    <strong>Ведьмак 3: Дикая Охота</strong><br>
+    Минимальные: Intel i5-2500K, 6 GB RAM, GTX 660, 50 GB места.<br>
+    Рекомендуемые: Intel i7-3770, 8 GB RAM, GTX 770.
+  </div>
+  <div class="specs-list">
+    <strong>Ведьмак 2: Убийцы королей</strong><br>
+    Минимальные: Intel Core 2 Duo 2.2 GHz, 2 GB RAM, GeForce 8800, 16 GB места.
+  </div>
+  <div class="specs-list">
+    <strong>Ведьмак (первая глава)</strong><br>
+    Минимальные: Intel Pentium 4, 1 GB RAM, GeForce 6600, 9 GB места.
+  </div>
+
+  <h2>Часто задаваемые вопросы</h2>
+  <div class="faq">
+    <div class="faq-item"><div class="faq-question">Как активировать игру после покупки?</div><div>Игра автоматически появится в библиотеке Steam. Скачайте и играйте.</div></div>
+    <div class="faq-item"><div class="faq-question">Есть ли скидки?</div><div>Да, Steam регулярно проводит распродажи: летняя, зимняя, хэллоуинская. Скидки достигают 80%.</div></div>
+    <div class="faq-item"><div class="faq-question">Можно ли вернуть игру?</div><div>Да, если вы играли менее 2 часов и покупка была совершена не позднее 14 дней.</div></div>
+  </div>
+
+  <h2>Похожие игры</h2>
+  <div class="schools-grid">
+    <div class="card">
+      <img class="card-img" src="images/15.png" alt="Dark Souls">
+      <div class="card-title">Dark Souls</div>
+      <div class="card-desc">Тёмное фэнтези, сложные бои и мрачная атмосфера.</div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/16.png" alt="Hollow Knight">
+      <div class="card-title">Hollow Knight</div>
+      <div class="card-desc">Метроидвания с глубоким лором и атмосферой угасающего мира.</div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/17.png" alt="Kingdom Come: Deliverance">
+      <div class="card-title">Kingdom Come: Deliverance</div>
+      <div class="card-desc">Историческая RPG без магии, но с реалистичным миром.</div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/18.jpg" alt="Dragon Age: Inquisition">
+      <div class="card-title">Dragon Age: Inquisition</div>
+      <div class="card-desc">Фэнтезийная RPG с отрядом и тактическими боями.</div>
+    </div>
+  </div>
+
+  <h2>Отзывы игроков</h2>
+  <div class="intro-text">
+    <p>«Лучшая RPG, в которую я когда-либо играл. Сюжет, персонажи, мир — всё на высшем уровне.» — DemonSlayer</p>
+    <p>«Гвинт — это отдельная любовь. Просто хочется собирать колоды и играть часами.» — CardMaster</p>
+    <p>«После прохождения Ведьмака 3 долго не мог найти игру, которая бы так же зацепила.» — WhiteWolfFan</p>
+  </div>
+
+  <div class="intro-text" style="text-align: center;">Все игры представлены на официальных страницах Steam. Цены ориентировочные, возможны скидки.</div>
+
+  <footer>
+    <p>2025 Путь Ведьмака | Все ссылки ведут на официальный магазин Steam.</p>
+    <p style="margin-top: 8px;">По вопросам сотрудничества: shop@witcher-world.ru</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

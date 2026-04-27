@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Ведьмак: главная страница</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="embers-container"></div>
+<button id="musicToggleBtn" class="music-toggle">MUSIC (ВЫКЛ)</button>
+<button id="scrollTopBtn" class="scroll-top" title="Наверх">↑</button>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="wrapper">
+  <div class="breadcrumbs"><a href="index.html">Главная</a> / Лор и герои</div>
+
+  <div class="nav-bar">
+    <a href="index.html" class="nav-btn active">Главная</a>
+    <a href="shop.html" class="nav-btn">Магазин игр</a>
+    <a href="books.html" class="nav-btn">Книги</a>
+  </div>
+
+  <div class="hero-banner">
+    <div class="hero-quote">Зло есть зло... Меньшее, большее, среднее — все едино. Если приходится выбирать, лучше не выбирать вовсе.</div>
+    <div class="hero-author">Геральт из Ривии, Последнее желание</div>
+  </div>
+
+  <h1>Ведьмак: Мир монстров и судьбы</h1>
+  <div class="intro-text">
+    <p><strong>Геральт из Ривии</strong> — беловолосый ведьмак, мутант, прошедший мутации Школы Волка. Вселенная, созданная <strong>Анджеем Сапковским</strong>, разрослась до масштабов культовой франшизы: книги, трилогия видеоигр, сериалы, комиксы.</p>
+    <p style="margin-top: 12px;"><strong>Континент</strong> — место действия саги. После Сопряжения сфер мир наводнили монстры, а люди, эльфы и гномы вынуждены сосуществовать в постоянных войнах.</p>
+  </div>
+
+  <h2>Хронология событий</h2>
+  <div class="timeline">
+    <div class="timeline-item"><div class="timeline-year">1230-е годы</div><div>Геральт проходит мутации в Каэр Морхене. Начало пути ведьмака.</div></div>
+    <div class="timeline-item"><div class="timeline-year">1250-е годы</div><div>События рассказов Последнее желание и Меч Предназначения. Встреча с Йеннифэр и Цири.</div></div>
+    <div class="timeline-item"><div class="timeline-year">1267 год</div><div>Погром в Цинтре. Начало саги Кровь эльфов.</div></div>
+    <div class="timeline-item"><div class="timeline-year">1268 год</div><div>Война с Нильфгаардом. Битва на Тузле.</div></div>
+    <div class="timeline-item"><div class="timeline-year">1270-е годы</div><div>События игр Ведьмак и Ведьмак 2: Убийцы королей.</div></div>
+    <div class="timeline-item"><div class="timeline-year">1272 год</div><div>Ведьмак 3: Дикая Охота — поиски Цири.</div></div>
+  </div>
+
+  <h2>Ключевые персонажи</h2>
+  <div class="characters-grid">
+    <div class="card"><img class="card-img" src="images/1.png" alt="Геральт"><div class="card-title">Геральт из Ривии</div><div class="card-desc">Белый Волк, мутант с боевыми навыками и магическими знаками. Ищет своё место в мире.</div></div>
+    <div class="card"><img class="card-img" src="images/2.png" alt="Йеннифэр"><div class="card-title">Йеннифэр из Венгерберга</div><div class="card-desc">Могущественная чародейка, любовь всей жизни Геральта.</div></div>
+    <div class="card"><img class="card-img" src="images/3.jpg" alt="Цири"><div class="card-title">Цирилла</div><div class="card-desc">Львенок из Цинтры, обладающая древней кровью Старшей Крови.</div></div>
+    <div class="card"><img class="card-img" src="images/4.jpg" alt="Лютик"><div class="card-title">Лютик</div><div class="card-desc">Трубадур и лучший друг Геральта. Его баллады сделали ведьмака легендой.</div></div>
+    <div class="card"><img class="card-img" src="images/5.png" alt="Весемир"><div class="card-title">Весемир</div><div class="card-desc">Старейший ведьмак, наставник Геральта.</div></div>
+    <div class="card"><img class="card-img" src="images/6.png" alt="Трисс"><div class="card-title">Трисс Меригольд</div><div class="card-desc">Талантливая чародейка, близкая подруга Геральта.</div></div>
+  </div>
+
+  <h2>Школы ведьмаков</h2>
+  <div class="schools-grid">
+    <div class="card"><div class="card-title">Школа Волка</div><div class="card-desc">Самая известная школа ведьмаков, к которой принадлежит Геральт из Ривии. Их цитадель — Каэр Морхен, расположенная в горах Королевств Севера. Школа Волка делает акцент на балансе между боевыми навыками и магическими знаками. Ведьмаки этой школы считаются наиболее сбалансированными и универсальными. Их отличительная черта — серебряные медальоны в виде волчьей головы.</div></div>
+    <div class="card"><div class="card-title">Школа Кота</div><div class="card-desc">Ведьмаки этой школы известны как наёмные убийцы, а не охотники на монстров. Они специализируются на лёгкой броне, быстрых атаках и использовании катаны. Школа Кота неоднократно распадалась на фракции из-за внутренних конфликтов. Многие из них потеряли рассудок из-за дополнительных мутаций, что сделало их непредсказуемыми. Их медальон имеет форму кошачьей головы.</div></div>
+    <div class="card"><div class="card-title">Школа Грифона</div><div class="card-desc">Школа Грифона славится своими магическими способностями и глубокими знаниями о мутациях. Их ведьмаки проходят дополнительные тренировки по усилению магических знаков. Цитадель школы располагалась в провинции Ковир. Ведьмаки этой школы предпочитают среднюю броню и сбалансированный бой. Их отличительный знак — медальон в форме грифа.</div></div>
+    <div class="card"><div class="card-title">Школа Медведя</div><div class="card-desc">Ведьмаки Школы Медведя носят тяжёлую броню и полагаются на физическую силу. Они медлительны, но их удары сокрушительны. Их цитадель находилась на островах Скеллиге, что повлияло на их суровый характер. Школа Медведя практически исчезла после погрома, устроенного орденом Пылающей Розы. Их медальон выполнен в форме медвежьей головы.</div></div>
+    <div class="card"><div class="card-title">Школа Змеи</div><div class="card-desc">Самая таинственная и малочисленная школа ведьмаков. Они специализируются на ядах, алхимии и скрытности. Их обучение проходило в цитадели Гора Смерти в Нильфгаарде. Школа Змеи готовила шпионов и убийц для императорского двора. Их ведьмаки редко носят медальоны открыто, предпочитая действовать из тени. Медальон имеет форму змеи, свернувшейся в кольцо.</div></div>
+  </div>
+
+  <h2>Популярные монстры</h2>
+  <div class="monsters-grid">
+    <div class="card"><img class="card-img" src="images/19.png" alt="Стрыйга"><div class="card-title">Стрыйга</div><div class="card-desc">Проклятая княжна Адда. Один из первых контрактов Геральта.</div></div>
+    <div class="card"><img class="card-img" src="images/20.png" alt="Леший"><div class="card-title">Леший</div><div class="card-desc">Хранитель леса. Огромное древоподобное чудовище.</div></div>
+    <div class="card"><img class="card-img" src="images/21.png" alt="Вампир"><div class="card-title">Вампир</div><div class="card-desc">Разумные и невероятно опасные. Регис — один из них.</div></div>
+    <div class="card"><img class="card-img" src="images/22.png" alt="Полуденница"><div class="card-title">Полуденница</div><div class="card-desc">Призрак, убивающий путников в полдень.</div></div>
+    <div class="card"><img class="card-img" src="images/23.png" alt="Дракон"><div class="card-title">Дракон</div><div class="card-desc">Бородавчатый дракон — один из встреченных Геральтом.</div></div>
+  </div>
+
+  <h2>Интересные факты</h2>
+  <div class="accordion">
+    <div class="accordion-item"><div class="accordion-header">Почему ведьмаки не могут иметь детей?</div><div class="accordion-content">Мутации, которые проходят ведьмаки, делают их бесплодными. Это цена за сверхспособности.</div></div>
+    <div class="accordion-item"><div class="accordion-header">Кто придумал Гвинта?</div><div class="accordion-content">Игру впервые показали в романе Кровь эльфов, но популярность она получила благодаря Ведьмак 3.</div></div>
+    <div class="accordion-item"><div class="accordion-header">Сколько книг в саге?</div><div class="accordion-content">2 сборника рассказов, 6 романов-саги и отдельный роман Сезон гроз.</div></div>
+  </div>
+
+  <h2>Галерея</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="images/11.png" alt="Скриншот 1"><div class="gallery-caption">Геральт и Цири</div></div>
+    <div class="gallery-item"><img src="images/12.png" alt="Скриншот 2"><div class="gallery-caption">Битва с монстром</div></div>
+    <div class="gallery-item"><img src="images/13.png" alt="Скриншот 3"><div class="gallery-caption">Пейзаж Туссента</div></div>
+    <div class="gallery-item"><img src="images/14.jpg" alt="Скриншот 4"><div class="gallery-caption">Каэр Морхен</div></div>
+  </div>
+
+  <div style="background: #1a1512; border-radius: 28px; padding: 20px; margin: 30px 0; text-align: center;">
+    <h3 style="margin: 0 0 10px;">Цитата дня</h3>
+    <div id="random-quote"></div>
+  </div>
+
+  <footer>
+    <p>2025 Путь Ведьмака</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
